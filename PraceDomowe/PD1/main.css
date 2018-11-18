@@ -1,0 +1,149 @@
+body, html {
+    width: 100%;
+    margin: 0 auto;  
+    background-image: url('images/background.svg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Open Sans';
+}
+h1 {
+
+}
+h2 {
+    font-size: 28px;
+    letter-spacing: 4.5px;
+}
+h3 {
+    font-size: 15px;
+    letter-spacing: 3.8px;
+}
+
+.page-header {
+    position: fixed;
+    box-sizing: border-box;
+    width: 20%;
+    padding-left: 2%;
+}
+
+/* MENU STYLES */
+.page-menu {
+    
+}
+.page-menu__items {
+    list-style-type: none;
+    padding-left: 0px;
+}
+.page-menu__item {
+    font-size: 13px;
+    letter-spacing: 6.7px;
+    font-weight: bold;
+}
+.page-menu__item a {
+    text-decoration: none;
+    color: #EF008E;
+    opacity: 0.8;
+}
+
+.page-content {
+    box-sizing: border-box;
+    width: 80%;
+    margin-left: 20%;
+}
+.content-section {
+    box-sizing: border-box;
+    width: 100%;
+    min-height: 100vh;
+    padding: 2% 2% 2% 2%;
+    text-align: right;
+}
+.content-section__header {
+    text-transform: uppercase;
+    color: #EF008E;
+    font-weight: bold;
+}
+
+/* HOME STYLES */
+.band-members {
+    list-style-type: none;
+    margin-top: 30vh;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.band-members__item {
+    box-sizing: border-box;
+    flex-grow: 1;
+}
+
+/* ABOUT STYLES */
+.about-section {
+    position: relative;
+}
+.about-section__desc {
+    display: block;
+    background-color: #25072E;
+    width: 30%;
+    padding: 2%;
+    position: absolute;
+    bottom: 15%;
+    border-bottom: 3px #EF008E solid;
+}
+.about-section__image {
+    border-top: 3px #EF008E solid;
+    max-width: 100%;
+}
+
+/* CONCERTS STYLES */
+.concerts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 20%;
+}
+.concerts__item {
+    box-sizing: border-box;
+    flex-basis: 50%;
+    padding: 2px 4px;
+}
+.concerts__image {
+    width: 100%;
+}
+
+/* VIDEO STYLES */
+.video iframe {
+    width: 70vw;
+    height: 70vh;
+}
+
+/* GALLERY STYLES */
+.gallery {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-left: 10%;
+}
+.gallery__item {
+    box-sizing: border-box;
+    flex-basis: 33.33%;
+    padding: 2px 4px;
+}
+.gallery__image {
+    width: 100%;
+    border-top: 3px #EF008E solid;
+}
+
+/* FOOTER STYLES */
+.page-footer {
+    position: fixed;
+    box-sizing: border-box;
+    width: 20%;
+    padding-left: 2%;
+    bottom: 0;
+}
+.social-media-links {
+    list-style-type: none;
+    padding-left: 0px;
+}
