@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>6BM Band Website</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="main.css">
     </head>
 
@@ -15,22 +17,22 @@
             <nav class="page-menu">
                 <ul class="page-menu__items">
                     <li class="page-menu__item">
-                        <a href="#home">HOME</a>
+                        <a href="#home" class="page-menu__link">HOME</a>
                     </li>
                     <li class="page-menu__item">
-                        <a href="#about">ABOUT</a>
+                        <a href="#about" class="page-menu__link">ABOUT</a>
                     </li>
                     <li class="page-menu__item">
-                        <a href="#concerts">CONCERTS</a>
+                        <a href="#concerts" class="page-menu__link">CONCERTS</a>
                     </li>
                     <li class="page-menu__item">
-                        <a href="#video">VIDEO</a>
+                        <a href="#video" class="page-menu__link">VIDEO</a>
                     </li>
                     <li class="page-menu__item">
-                        <a href="#photos">PHOTOS</a>
+                        <a href="#photos" class="page-menu__link">PHOTOS</a>
                     </li>
                     <li class="page-menu__item">
-                        <a href="#contact">CONTACT</a>
+                        <a href="#contact" class="page-menu__link">CONTACT</a>
                     </li>
                 </ul>
             </nav>
@@ -86,49 +88,57 @@
                     <article class="concerts__item">
                         <img class="concerts__image" src="images/band02_WiechnikMarcin.jpg" alt="Band02 Wiechnik Marcin" />
                         <header class="concerts__info">
-                            <p class="concerts__time">
+                            <div class="concerts__time">
                                 <time datetime="2018-12-20">20.12.2018</time>
-                            </p>
-                            <p class="concerts__location">
+                            </div>
+                            <div class="concerts__location">
                                 Lublin, klub XXX
-                            </p>
-                            <button class="button">BUY TICKET</button>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">BUY TICKET</button>
+                            </div>
                         </header>
                     </article>
                     <article class="concerts__item">
                         <img class="concerts__image" src="images/band03_WiechnikMarcin.jpg" alt="Band03 Wiechnik Marcin" />
                         <header class="concerts__info">
-                            <p class="concerts__time">
+                            <div class="concerts__time">
                                 <time>20.12.2018</time> 
-                            </p>
-                            <p class="concerts__location">
+                            </div>
+                            <div class="concerts__location">
                                 Warszawa, klub YYY
-                            </p>
-                            <button class="button">BUY TICKET</button>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">BUY TICKET</button>
+                            </div>
                         </header>
                     </article>
                     <article class="concerts__item">
                         <img class="concerts__image" src="images/band04_JakubBodys.jpg" alt="Band03 Jakub Bodys" />
                         <header class="concerts__info">
-                            <p class="concerts__time">
+                            <div class="concerts__time">
                                 <time>20.12.2018</time>
-                            </p>
-                            <p class="concerts__location">
+                            </div>
+                            <div class="concerts__location">
                                 Kraków, klub ZZZ
-                            </p>
-                            <button class="button">BUY TICKET</button>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">BUY TICKET</button>
+                            </div>
                         </header>
                     </article>
                     <article class="concerts__item">
                         <img class="concerts__image" src="images/band05_JakubBodys.jpg" alt="Band05 Jakub Bodys" />
                         <header class="concerts__info">
-                            <p class="concerts__time">
+                            <div class="concerts__time">
                                 <time>20.12.2018</time>
-                            </p>
-                            <p class="concerts__location">
+                            </div>
+                            <div class="concerts__location">
                                 Poznań, klub AAA
-                            </p>
-                            <button class="button">BUY TICKET</button>
+                            </div>
+                            <div class="concerts__button-wrapper">
+                                <button class="button">BUY TICKET</button>
+                            </div>
                         </header>
                     </article>
                 </div>
@@ -186,23 +196,27 @@
             <!-- CONTACT SECTION -->
             <section id="contact" class="content-section contact-section">
                 <h2 class="content-section__header">CONTACT</h2>
-                <img class="contact-section__image" src="images/band12.jpg" alt="Band12" />
-                <address class="contact-section__address">
-                    Tel: 00 48 999 00
-                    e-mail: 6bmband@mail.mail
-                </address>
-                <form class="form">
-                    <div class="form__field">
-                        <label class="form__label" for="email">Email</label>
-                        <input class="form__input" type="email" id="email" name="email"/>
-                    </div>
-                    <div class="form__field">
-                        <label class="form__label" for="topic">Topic</label>
-                        <input class="form__input" type="text" id="topic" name="topic" />
-                    </div>
-
-                    <button class="button" type="submit">CONTACT US!</button>
-                </form>
+                <div class="contact-section__container">
+                    <img class="contact-section__image" src="images/band12.jpg" alt="Band12" />
+                    <address class="contact-section__address">
+                        Tel: 00 48 999 00 <br/>
+                        e-mail: 6bmband@mail.mail
+                    </address>
+                    <form class="form">
+                        <div class="form__field">
+                            <label class="form__label" for="email">Email</label>
+                            <input class="form__input" type="email" id="email" name="email"/>
+                        </div>
+                        <div class="form__field">
+                            <label class="form__label" for="topic">Topic</label>
+                            <input class="form__input" type="text" id="topic" name="topic" />
+                        </div>
+                        
+                        <div class="form__field">
+                            <button class="button" type="submit">CONTACT US!</button>
+                        </div>
+                    </form>
+                <div>
             </section>
         </main>
 
@@ -210,16 +224,16 @@
         <footer class="page-footer">
             <ul class="social-media-links">
                 <li class="social-media-links__item">
-                    <a href="http://www.facebook.com" target="_blank"><img src="images/fb.svg" alt="Facebook Icon" /></a>
+                    <a href="http://www.facebook.com" target="_blank"><img class="social-media-links__image" src="images/fb.svg" alt="Facebook Icon" /></a>
                 </li>
                 <li class="social-media-links__item">
-                    <a href="http://www.instagram.com" target="_blank"><img src="images/insta.svg" alt="Instagram Icon" /></a>
+                    <a href="http://www.instagram.com" target="_blank"><img class="social-media-links__image" src="images/insta.svg" alt="Instagram Icon" /></a>
                 </li>
                 <li class="social-media-links__item">
-                    <a href="http://www.last.fm" target="_blank"><img src="images/last.svg" alt="Last Icon" /></a>
+                    <a href="http://www.last.fm" target="_blank"><img class="social-media-links__image" src="images/last.svg" alt="Last Icon" /></a>
                 </li>
                 <li class="social-media-links__item">
-                    <a href="http://www.facebook.com" target="_blank"><img src="images/yout.svg" alt="YouTube Icon" /></a>
+                    <a href="http://www.facebook.com" target="_blank"><img class="social-media-links__image" src="images/yout.svg" alt="YouTube Icon" /></a>
                 </li>
             </ul>
         </footer>
