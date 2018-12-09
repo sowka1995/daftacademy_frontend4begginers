@@ -10,7 +10,6 @@ body, html {
 * {
     box-sizing: border-box;
 }
-
 .page-header {
     position: fixed;
     width: 20%;
@@ -34,8 +33,16 @@ body, html {
     display: inline-block;
     padding: 5px;
     text-decoration: none;
-    color: rgba(239, 0, 142, 0.8);
+    color: rgba(239, 0, 142, 0.7);
     cursor: pointer;
+    transition: color 1s;
+}
+.page-menu__link:hover {
+    color: rgba(239, 0, 142, 1);
+}
+.page-menu__link:focus {
+    color: rgba(239, 0, 142, 1);
+    outline: none;
 }
 
 .page-content {
@@ -69,6 +76,20 @@ body, html {
     letter-spacing: 1.6px;
     font-weight: 600;
     cursor: pointer;
+    transition: background-color 0.5s, border 0.5s;
+}
+.button:hover,
+.button:active {
+    background-color: rgba(204, 200, 255, 0.5);
+}
+.button:focus {
+    background-color: rgba(204, 200, 255, 0.3);
+    border: 1px solid #CCC8FF;
+    outline: none;
+}
+.button:disabled {
+    color:#CCC8FF;
+    opacity: 0.1;
 }
 
 /* HOME STYLES */
@@ -88,16 +109,29 @@ body, html {
     padding-bottom: 20px;
 }
 .band-members__name {
+    opacity: 0;
     font-weight: bold;
     letter-spacing: 3.5px;
     color: #CCC8FF;
     padding: 0;
     margin: 0;
+    transition: opacity 0.5s;
 }
 .band-members__desc {
+    opacity: 0;
     padding-top: 3%;
     margin: 0;
     color: rgba(204, 200, 255, 0.5);
+    transition: opacity 0.5s;
+}
+.band-members__image {
+    opacity: 0.4;
+    transition: opacity 0.5s;
+}
+.band-members__item:hover .band-members__desc,
+.band-members__item:hover .band-members__name,
+.band-members__item:hover .band-members__image {
+    opacity: 1;
 }
 
 /* ABOUT STYLES */
@@ -199,11 +233,15 @@ body, html {
     box-sizing: border-box;
     width: 33.33%;
     min-width: 227px;
-    padding: 2px 4px;
+    padding: 4px 7px;
+    transition: all 0.6s;
 }
 .gallery__image {
     width: 100%;
     border-top: 3px #EF008E solid;
+}
+.gallery__item:hover {
+    transform: scale(1.08);
 }
 
 .contact-section__container {
@@ -261,6 +299,21 @@ body, html {
 }
 .social-media-links__image {
     width: 25px;
+    opacity: 0.8;
+    transition: all 1s;
+}
+
+.social-media-links__image:hover {
+    opacity: 1;
+}
+.social-media-links__image:active {
+    opacity: 0.6;
+}
+.social-media-links__image:focus {
+    opacity: 1;
+}
+.social-media-links__image:disabled {
+    opacity: 0.4;
 }
 
 /* TABLETS */
